@@ -1,7 +1,7 @@
 ---
 title: CSS(Cascading Style Sheet)
 date: 2022-11-25 14:11:37
-category: WEB_basics
+category: WEB_Basics
 thumbnail: { thumbnailSrc }
 draft: false
 ---
@@ -10,7 +10,7 @@ draft: false
 
 1. 인라인 방식
     - 엘리먼트 태그 내부 style 속성에 css 설정
-    - eg) `<p style="color: blue; "> inline </p>`
+    - eg) `<p style="color: blue; "> inline </p>`s
 2. 내부파일 지정 방식
     - html 파일 내에 style 엘리먼트에 css 정의
 
