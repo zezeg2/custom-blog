@@ -93,6 +93,11 @@ Reference(MDN Document) :
 - css
   layout : [https://developer.mozilla.org/ko/docs/Learn/CSS/CSS_layout](https://developer.mozilla.org/ko/docs/Learn/CSS/CSS_layout)
 
+> **상대단위 em, rem, %**
+상대(relative) 단위란 고정되지 않고 어떤 기준에 따라서 유동적으로 바뀔 수 있는 길이를 나타내는 단위
+- `em`  :  해당 단위가 사용되고 있는 요소의 폰트 사이즈
+- `rem`  :  최상위 요소(html) 사용되고 있는 요소의 폰트 사이즈(16px), 0.5rem ⇒8px
+- `%` : 최상위 요소(html) 사용되고 있는 요소의 폰트 사이즈는 100% 16px, 200% ⇒ 32px
 ```html
 <!DOCTYPE html>
 <html>
@@ -205,13 +210,53 @@ Reference(MDN Document) :
 </body>
 </html>
 ```
-
 ![img_6.png](img_6.png)
-> **상대단위 em, rem, %**
-상대(relative) 단위란 고정되지 않고 어떤 기준에 따라서 유동적으로 바뀔 수 있는 길이를 나타내는 단위
-`em`  :  해당 단위가 사용되고 있는 요소의 폰트 사이즈
-`rem`  :  최상위 요소(html) 사용되고 있는 요소의 폰트 사이즈(16px), 0.5rem ⇒8px
-`%` : 최상위 요소(html) 사용되고 있는 요소의 폰트 사이즈는 100% 16px, 200% ⇒ 32px
->
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+	.base {
+	width: 100px;
+	height: 100px;
+	border: 10px solid green;
+	margin: 10px;
+	text-align: center;
+	font-size: 30px
+	}
+
+	.addpadding{
+	padding: 20px;
+	}
+	
+	.roundborder{
+	border-radius: 20px;
+	}
+	
+	.centeralign{
+	margin-left: auto;
+	margin-right: auto;
+	}
+	
+	.unvisible{
+	display: none;
+	}
+
+</style>
+</head>
+<body>
+	<div class="base">box</div>
+	<div class="base addpadding">box</div>
+	<div class="base roundborder">box</div>
+	<div class="base centeralign">box</div>
+	<div class="base unvisible">box</div>
+</body>
+</html>
+```
+![img_7.png](img_7.png)
 
 
