@@ -206,14 +206,12 @@ draft: false
             - control: 컨트롤러 표시
             - autoplay : html페이지 로딩시 자동 음악 재생
             - loop : 자동재생
-
                 > 참고 : chrome 브라우저에서는 지원하지 않는 속성(개인정보 보안 문제)
-                > 
-        - <video> 소스의 video 재생
-        - 확장자 : mp4 …
-        - control: 컨트롤러 표시
-        - width, height
-        - poster : 재생되기 전에 표시할 이미지(썸네일)
+        - `<video>` 소스의 video 재생
+          - 확장자 : mp4 …
+          - control: 컨트롤러 표시
+          - width, height
+          - poster : 재생되기 전에 표시할 이미지(썸네일)
 5. 하이퍼링크 태그
     - `<a>` 태그 :  클릭 시 지정한 url(혹은 현재 문서의 특정 태그 위치, 태그의 id 또는 class를 통해 명시)로 이동하는 하이퍼링크 생성
         - href : 이동할 url
