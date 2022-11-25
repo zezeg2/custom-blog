@@ -6,8 +6,6 @@ thumbnail: { thumbnailSrc }
 draft: false
 ---
 
-## CSS (Cascading Style Sheets)
-
 ### HTML에 css 적용하는 방법
 
 1. 인라인 방식
@@ -68,7 +66,7 @@ Reference(MDN Document): css를 적용할 태그를 선택하는 문법이다.
    > CSS 적용방식, 선택자를 통한 모든 우선순위를 무시하고 CSS 적용하기 위해서는 !important 속성을 사용할 수 있다
    >
 
-   eg**)**
+   eg)
 
     ```xml
     <style>
@@ -208,6 +206,7 @@ Reference(MDN Document) :
 </html>
 ```
 
+![img_6.png](img_6.png)
 > **상대단위 em, rem, %**
 상대(relative) 단위란 고정되지 않고 어떤 기준에 따라서 유동적으로 바뀔 수 있는 길이를 나타내는 단위
 `em`  :  해당 단위가 사용되고 있는 요소의 폰트 사이즈
@@ -215,5 +214,4 @@ Reference(MDN Document) :
 `%` : 최상위 요소(html) 사용되고 있는 요소의 폰트 사이즈는 100% 16px, 200% ⇒ 32px
 >
 
-![img_6.png](img_6.png)
 
