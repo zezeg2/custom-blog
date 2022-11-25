@@ -1,12 +1,12 @@
 module.exports = {
-  title: `Bee starter`,
-  description: `Blog posted about ...`,
-  author: `[Your Name]`,
-  introduction: `I explain with words and code. I explain with words and code. I explain with words and code.`,
-  siteUrl: `https://gatsby-starter-bee.netlify.com`, // Your blog site url
+  title: `tail -f Udemy_Starters_Bootcamp.log`,
+  description: `이 페이지는 부트캠프의 학습 과정을 남기고 있습니다.`,
+  author: `[ 박종현 / Henry ]`,
+  introduction: `안녕하세요 ! 유데미 스타터즈 부트캠프 3기 백앤드과정 수강생 박종현 입니다😊`,
+  siteUrl: `https://jh-starters-bootcamp.netlify.app`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
-    github: ``, // Your GitHub account
+    github: `zezeg2`, // Your GitHub account
     medium: ``, // Your Medium account
     facebook: ``, // Your Facebook account
     linkedin: ``, // Your LinkedIn account
@@ -16,7 +16,7 @@ module.exports = {
   keywords: [`blog`],
   comment: {
     disqusShortName: '', // Your disqus-short-name. check disqus.com.
-    utterances: 'JaeYeopHan/gatsby-starter-bee', // Your repository for archive comment
+    utterances: 'zezeg2/custom-blog', // Your repository for archive comment
   },
   configs: {
     countOfInitialPost: 10, // Config your initial count of post
