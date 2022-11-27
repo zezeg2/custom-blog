@@ -10,7 +10,7 @@ body.dark {
 
   .bio {
     .author-name-content {
-      background-color: $dark-category-border-color;
+      background-color: $dark-filter-border-color;
     }
     .author-introduction {
       color: $dark-middle-font-color;
@@ -20,26 +20,26 @@ body.dark {
     }
   }
 
-  .category-container {
-    border-top: 1px solid $dark-category-border-color;
-    border-bottom: 1px solid $dark-category-border-color;
-    border-right: 6px solid $dark-category-border-color;
-    border-left: 6px solid $dark-category-border-color;
-    background-color: $dark-category-background-color;
+  .filter-container {
+    border-top: 1px solid $dark-filter-border-color;
+    border-bottom: 1px solid $dark-filter-border-color;
+    border-right: 6px solid $dark-filter-border-color;
+    border-left: 6px solid $dark-filter-border-color;
+    background-color: $dark-filter-background-color;
     .item {
-      border: 1px solid $dark-category-border-color;
-      background-color: $dark-category-item-color;
+      border: 1px solid $dark-filter-border-color;
+      background-color: $dark-filter-item-color;
       -webkit-box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.1);
       box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.1);
       a {
-        color: $dark-category-text-color;
+        color: $dark-filter-text-color;
       }
       &[aria-selected='true'] {
-        border: 2px solid $dark-category-highlight-border-color;
+        border: 2px solid $dark-filter-highlight-border-color;
         font-weight: bolder;
       }
       &[aria-selected='true'] a {
-        color: $dark-category-highlight-text-color;
+        color: $dark-filter-highlight-text-color;
       }
     }
   }
@@ -81,5 +81,51 @@ body.dark {
   }
   td {
     border-bottom: 1px solid #eee;
+  }
+
+  .toggleSwitch {
+    top: 50%;
+    width: 50px;
+    margin-right: 20px;
+    height: 25px;
+    display: block;
+    position: relative;
+    border-radius: 15px;
+    background-color: #F2F5F6;
+    box-shadow: 0 0 16px 3px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+
+  .toggleSwitch .toggleButton {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: #F382CDFF;
+  }
+
+  #toggleFilter:checked ~ .toggleSwitch {
+    background: #F382CDFF;
+  }
+
+  #toggleFilter:checked ~ .toggleSwitch .toggleButton {
+    left: calc(100% - 22px);
+    background: #F2F5F6;
+  }
+
+  .toggleSwitch, .toggleButton {
+    transition: all 0.2s ease-in;
+  }
+
+  .toggleFilter {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    color: #da8ec3;
+    font-family: Serif;
+    transition: all 0.5s ease-in-out;
   }
 }

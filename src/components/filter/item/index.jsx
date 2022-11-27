@@ -1,25 +1,24 @@
 import React, { useRef, useCallback, useEffect } from 'react'
 
-export const Item = ({ title, selectedCategory, onClick, scrollToCenter }) => {
+export const Item = ({ title, selectedBy, onClick, scrollToCenter }) => {
   const tabRef = useRef(null)
-
   const handleClick = useCallback(() => {
     scrollToCenter(tabRef)
     onClick(title)
   }, [tabRef])
 
   useEffect(() => {
-    if (selectedCategory === title) {
+    if (selectedBy === title) {
       scrollToCenter(tabRef)
     }
-  }, [selectedCategory, tabRef])
+  }, [selectedBy, tabRef])
 
   return (
     <li
       ref={tabRef}
       className="item"
       role="tab"
-      aria-selected={selectedCategory === title ? 'true' : 'false'}
+      aria-selected={selectedBy === title ? 'true' : 'false'}
     >
       <div onClick={handleClick}>{title}</div>
     </li>

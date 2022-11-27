@@ -9,7 +9,7 @@ body.light {
 
   .bio {
     .author-name-content {
-      background-color: $light-category-border-color;
+      background-color: $light-filter-border-color;
     }
     .author-introduction {
       color: $middle-gray;
@@ -19,26 +19,26 @@ body.light {
     }
   }
 
-  .category-container {
-    border-top: 1px solid $light-category-border-color;
-    border-bottom: 1px solid $light-category-border-color;
-    border-right: 6px solid $light-category-border-color;
-    border-left: 6px solid $light-category-border-color;
-    background-color: $light-category-background-color;
+  .filter-container {
+    border-top: 1px solid $light-filter-border-color;
+    border-bottom: 1px solid $light-filter-border-color;
+    border-right: 6px solid $light-filter-border-color;
+    border-left: 6px solid $light-filter-border-color;
+    background-color: $light-filter-background-color;
     .item {
-      border: 1px solid $light-category-border-color;
-      background-color: $light-category-item-color;
+      border: 1px solid $light-filter-border-color;
+      background-color: $light-filter-item-color;
       -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
       a {
-        color: $light-category-text-color;
+        color: $light-filter-text-color;
       }
       &[aria-selected='true'] {
-        border: 2px solid $light-category-highlight-border-color;
+        border: 2px solid $light-filter-highlight-border-color;
         font-weight: bolder;
       }
       &[aria-selected='true'] a {
-        color: $light-category-highlight-text-color;
+        color: $light-filter-highlight-text-color;
       }
     }
   }
@@ -68,5 +68,50 @@ body.light {
       background-color: $navigator-background-color;
       color: $navigator-text-color;
     }
+  }
+
+  .toggleSwitch {
+    top: 50%;
+    width: 50px;
+    margin-right: 20px;
+    height: 25px;
+    display: block;
+    position: relative;
+    border-radius: 15px;
+    background-color: #F2F5F6;
+    box-shadow: 0 0 16px 3px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+  }
+
+  .toggleSwitch .toggleButton {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: #F382CDFF;
+  }
+
+  #toggleFilter:checked ~ .toggleSwitch {
+    background: #F382CDFF;
+  }
+
+  #toggleFilter:checked ~ .toggleSwitch .toggleButton {
+    left: calc(100% - 22px);
+    background: #F2F5F6;
+  }
+
+  .toggleSwitch, .toggleButton {
+    transition: all 0.2s ease-in;
+  }
+  .toggleFilter{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    color: #943e76;
+    font-family: Serif;
+    transition: all 0.5s ease-in-out;
   }
 }

@@ -1,6 +1,6 @@
 @import '../../styles/variables.scss';
 
-.category-container {
+.filter-container {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -33,11 +33,45 @@
   }
 }
 
-.category-container::-webkit-scrollbar {
+.inline {
+  display: inline-block;
+  height: 40px;
+}
+
+.customToggleSwitch {
+  width: fit-content;
+  margin: 10px;
+  height: 30px;
+  display: block;
+  position: relative;
+  border-radius: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 16px 3px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.customToggleSwitch .customToggleButton {
+  display: inline-block;
+  margin: 0 10px 0 10px;
+  top: 50%;
+  left: 4px;
+  transform: translateY(30%);
+  border-radius: 50%;
+}
+
+.inline input:checked ~ .customToggleSwitch {
+  background: #FFCCCC;
+}
+
+
+.customToggleSwitch, .customToggleButton {
+  transition: all 0.2s ease-in;
+}
+.filter-container::-webkit-scrollbar {
   display: none; // Safari and Chrome
 }
 
-.category-container {
+.filter-container {
   scroll-behavior: smooth;
 }
 @media (prefers-reduced-motion: reduce) {

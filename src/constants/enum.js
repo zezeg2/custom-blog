@@ -1,5 +1,7 @@
-export const CATEGORY_TYPE = {
+export const FILTER_TYPE = {
   ALL: 'All',
+  CATEGORY: 'category',
+  KEYWORD: 'keyword'
 }
 
 export const THEME = {

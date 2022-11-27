@@ -3,6 +3,8 @@ title: html 기본문서 만들기
 date: 2022-11-25 11:11:03
 category: WEB_Basics
 thumbnail: { thumbnailSrc }
+keywords:
+- first
 draft: false
 ---
 
@@ -279,7 +281,7 @@ draft: false
     ```
    ![img_5.png](img_5.png)
 
-    ### ‼️MarkDown이란 ? 
+    >### MarkDown이란 ? 
     > markdown 언어
     markdown 언어는 markup 언어의 일종으로 컨텐츠를 표시할 구조에 해당하는 html 태그를 특정의 문자로 대체한 언어이다.
     eg) `<h1>` → `#`

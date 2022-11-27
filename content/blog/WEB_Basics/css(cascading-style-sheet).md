@@ -3,6 +3,9 @@ title: CSS(Cascading Style Sheet)
 date: 2022-11-25 14:11:37
 category: WEB_Basics
 thumbnail: { thumbnailSrc }
+keywords:
+  - first
+  - second
 draft: false
 ---
 
